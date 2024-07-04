@@ -5,17 +5,16 @@ import 'package:flutter/material.dart';
 import 'src/module.fair.dart' as g;
 
 void main() {
-  runApp(const MyApp());
   WidgetsFlutterBinding.ensureInitialized();
 
   FairApp.runApplication(
     FairApp(
-      child: MyApp(),
       delegate: {
         ///此处delegate注册的key名必须与fairwidget页面name的名字一致,
         ///TestFairDelegate只作用于相同名字的fairwidget
       },
       generated: g.FairAppModule(),
+      child: const MyApp(),
     ),
 
     ///需要在此注册需要全局使用的plugin,key名可以随意不做要求
@@ -44,11 +43,8 @@ class MyApp extends StatelessWidget {
           name: 'lib_home_page',
           path: "assets/fair/lib_home_page.fair.json",
           data: {
-            'fairProps': jsonEncode({
-              "title": "test"
-            }),
+            'fairProps': jsonEncode({"title": "test"}),
           },
-        )
-    );
+        ));
   }
 }
