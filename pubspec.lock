@@ -206,10 +206,10 @@ packages:
     dependency: "direct dev"
     description:
       name: fair_compiler
-      sha256: "2e1ed78b511f7b3bdb94ba604d7c4ee9d258a44fa36e20f8078c42417e6f13cb"
+      sha256: "34863dc39c4393230bc0afdd85273e4f1ec83b3a07df633940bf313ea255b13e"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "2.1.2"
   fair_dart2dsl:
     dependency: transitive
     description:
