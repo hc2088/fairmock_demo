@@ -10,7 +10,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   FairPushy.init(
-      appID: '1810',
+      appID: '10000',///项目ID
       updateUrl: BasicConfig.getInstance().appIsDebug
           ? "http://BUNDLE_PATCH_URL"
           : "https://BUNDLE_PATCH_URL",
