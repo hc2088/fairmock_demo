@@ -26,6 +26,7 @@ dependencies:
       path: fair
 
 
+  fair_pushy:
 
 
 
@@ -39,7 +40,6 @@ dev_dependencies:
   fair_compiler: ^2.1.2
 
 
-  fair_pushy:
 
 dependency_overrides:
   build_runner: 2.3.3

@@ -235,7 +235,7 @@ packages:
     source: hosted
     version: "1.6.0"
   fair_pushy:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: fair_pushy
       sha256: "4fb6ba5e5ff2ee830a880190b0a2a00644d12915079f53d34b36a851a6453418"
