@@ -10,11 +10,12 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   FairPushy.init(
-      appID: '10000',///项目ID
-      updateUrl: BasicConfig.getInstance().appIsDebug
-          ? "http://BUNDLE_PATCH_URL"
-          : "https://BUNDLE_PATCH_URL",
-      debug: BasicConfig.getInstance().appIsDebug);
+    appID: '29', //项目ID
+    updateUrl: "http://127.0.0.1:8080/app/patch",
+  );
+
+  ///http://127.0.0.1:8080/web/module_patch?appId=29
+  ///FairPushy.getConfigs('http://127.0.0.1:8080/web/module_patch');
 
   FairApp.runApplication(
     FairApp(
@@ -56,12 +57,12 @@ class MyApp extends StatelessWidget {
       //   },
       // ));
       home: FairPushyWidget(
-        bundleid: "1810", //需要下载的bundleid标识
+        bundleid: "156", //需要下载的bundleid标识
         targetWidgetBuilder: (context) => FairWidget(
           name: 'lib_fab_test_page_fab_template',
           holder: (context) => Container(),
           path: FairPushy.getFilePath(
-            bundleId: "1810",
+            bundleId: "156",
             filename: 'lib_fab_test_page_fab_template.fair.bin',
           ),
         ),
