@@ -1,0 +1,165 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Column",
+          "na": {
+            "children": [
+              {
+                "className": "Text",
+                "pa": [
+                  "%(getName2)"
+                ]
+              },
+              {
+                "className": "Text",
+                "pa": [
+                  "%(getName)"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "body": {
+      "className": "Center",
+      "na": {
+        "child": {
+          "className": "Column",
+          "na": {
+            "mainAxisAlignment": "#(MainAxisAlignment.center)",
+            "children": [
+              {
+                "className": "Text",
+                "pa": [
+                  "You have pushed the button this many times:"
+                ]
+              },
+              {
+                "className": "Text",
+                "pa": [
+                  "#($_counter)"
+                ],
+                "na": {
+                  "style": {
+                    "className": "TextStyle",
+                    "na": {
+                      "fontSize": 40,
+                      "color": {
+                        "className": "Color",
+                        "pa": [
+                          "0xffeb4237"
+                        ]
+                      },
+                      "wordSpacing": 0
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Expanded",
+                "na": {
+                  "child": {
+                    "className": "ListView.builder",
+                    "na": {
+                      "itemCount": "%(getLength)",
+                      "itemBuilder": {
+                        "className": "Sugar.indexedWidgetBuilder",
+                        "pa": [
+                          {
+                            "className": "FairFunction",
+                            "body": {
+                              "className": "Text",
+                              "pa": [
+                                "%(getItemName(^(index)))"
+                              ],
+                              "na": {
+                                "style": {
+                                  "className": "TextStyle",
+                                  "na": {
+                                    "color": "#(Colors.blue)"
+                                  }
+                                }
+                              }
+                            },
+                            "parameters": {
+                              "pa": [
+                                "context",
+                                "index"
+                              ]
+                            },
+                            "tag": "Widget Function(BuildContext, int)",
+                            "rt": "Widget"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Expanded",
+                "na": {
+                  "child": {
+                    "className": "ListView.builder",
+                    "na": {
+                      "itemCount": "%(getLength2)",
+                      "itemBuilder": {
+                        "className": "Sugar.indexedWidgetBuilder",
+                        "pa": [
+                          {
+                            "className": "FairFunction",
+                            "body": {
+                              "className": "Text",
+                              "pa": [
+                                "%(getItemName2(^(index)))"
+                              ],
+                              "na": {
+                                "style": {
+                                  "className": "TextStyle",
+                                  "na": {
+                                    "color": "#(Colors.blue)"
+                                  }
+                                }
+                              }
+                            },
+                            "parameters": {
+                              "pa": [
+                                "context",
+                                "index"
+                              ]
+                            },
+                            "tag": "Widget Function(BuildContext, int)",
+                            "rt": "Widget"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "floatingActionButton": {
+      "className": "FloatingActionButton",
+      "na": {
+        "onPressed": "@(_incrementCounter)",
+        "tooltip": "Increment",
+        "child": {
+          "className": "Icon",
+          "pa": [
+            "#(Icons.add)"
+          ]
+        }
+      }
+    }
+  },
+  "methodMap": {}
+}

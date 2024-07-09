@@ -49,24 +49,31 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      // home: FairWidget(
-      //   name: 'lib_home_page',
-      //   path: "assets/fair/lib_home_page.fair.json",
-      //   data: {
-      //     'fairProps': jsonEncode({"title": "test"}),
-      //   },
-      // ));
-      home: FairPushyWidget(
-        bundleid: "156", //需要下载的bundleid标识
-        targetWidgetBuilder: (context) => FairWidget(
-          name: 'lib_fab_test_page_fab_template',
-          holder: (context) => Container(),
-          path: FairPushy.getFilePath(
-            bundleId: "156",
-            filename: 'lib_fab_test_page_fab_template.fair.bin',
-          ),
-        ),
+      home: FairWidget(
+        name: 'lib_home_page',
+        path: "assets/fair/lib_test1.fair.json",
+        data: {
+          'fairProps': jsonEncode({
+            "title": "test",
+            "dataMap2": {"name": "老毕1", "age": 18},
+            "dataList2": [
+              {"name": "老毕1", "age": 18},
+              {"name": "老毕2", "age": 18}
+            ]
+          }),
+        },
       ),
+      // home: FairPushyWidget(
+      //   bundleid: "156", //需要下载的bundleid标识
+      //   targetWidgetBuilder: (context) => FairWidget(
+      //     name: 'lib_fab_test_page_fab_template',
+      //     holder: (context) => Container(),
+      //     path: FairPushy.getFilePath(
+      //       bundleId: "156",
+      //       filename: 'lib_fab_test_page_fab_template.fair.bin',
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
