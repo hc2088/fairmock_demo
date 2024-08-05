@@ -1,0 +1,133 @@
+
+  ///http://127.0.0.1:8080/web/module_patch?appId=29
+  ///FairPushy.getConfigs('http://127.0.0.1:8080/web/module_patch');
+
+{
+    "code": 0,
+    "data":
+    {
+        "bundleList":
+        [
+            {
+                "appId": "29",
+                "bundleId": 151,
+                "patchCdnUrl": "",
+                "status": "2",
+                "remark": "测试",
+                "bundleName": "fair_test",
+                "bundleVersion": "0.0.1",
+                "updateTime": "2023-11-01 04:38:34.000Z",
+                "patchGitUrl": "git@igit.58corp.com:house_flutter/fair_commercial_module.git",
+                "patchGitBranch": "fair-test",
+                "flutterVersion": "3.0.5"
+            },
+            {
+                "appId": "29",
+                "bundleId": 152,
+                "patchCdnUrl": "",
+                "status": "2",
+                "remark": "测试",
+                "bundleName": "fair_test",
+                "bundleVersion": "0.0.1",
+                "updateTime": "2023-11-01 04:38:40.000Z",
+                "patchGitUrl": "git@igit.58corp.com:house_flutter/fair_commercial_module.git",
+                "patchGitBranch": "fair-test",
+                "flutterVersion": "3.0.5"
+            },
+            {
+                "appId": "29",
+                "bundleId": 153,
+                "patchCdnUrl": "",
+                "status": "3",
+                "remark": "test",
+                "bundleName": "test1101",
+                "bundleVersion": "0.0.1",
+                "updateTime": "2023-11-01 04:41:05.000Z",
+                "patchGitUrl": "git@igit.58corp.com:house_flutter/fair_commercial_module.git",
+                "patchGitBranch": "fair-test",
+                "flutterVersion": "0.0.2"
+            },
+            {
+                "appId": "29",
+                "bundleId": 155,
+                "patchCdnUrl": "11",
+                "status": "1",
+                "remark": "test1",
+                "bundleName": "testaaa",
+                "bundleVersion": "0.0.1",
+                "updateTime": "2024-07-08 05:39:34.000Z",
+                "patchGitUrl": "null",
+                "patchGitBranch": "null",
+                "flutterVersion": "null"
+            },
+            {
+                "appId": "29",
+                "bundleId": 156,
+                "patchCdnUrl": "https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/777bc78bba5003608030099f4d8f675a_fair_patch.zip",
+                "status": "1",
+                "remark": "fairtest01",
+                "bundleName": "fairtest01",
+                "bundleVersion": "0.0.1",
+                "updateTime": "2024-07-08 05:45:20.000Z",
+                "patchGitUrl": "null",
+                "patchGitBranch": "null",
+                "flutterVersion": "null"
+            },
+            {
+                "appId": "29",
+                "bundleId": 157,
+                "patchCdnUrl": "https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/9e709087539ac4fdbdd2f0b535303c2c_fair_patch.zip",
+                "status": "1",
+                "remark": "123",
+                "bundleName": "0.0.2",
+                "bundleVersion": "test2",
+                "updateTime": "2024-07-08 06:37:20.000Z",
+                "patchGitUrl": "null",
+                "patchGitBranch": "null",
+                "flutterVersion": "null"
+            },
+            {
+                "appId": "29",
+                "bundleId": 158,
+                "patchCdnUrl": "https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/9e709087539ac4fdbdd2f0b535303c2c_fair_patch.zip",
+                "status": "1",
+                "remark": "123",
+                "bundleName": "0.0.2",
+                "bundleVersion": "test2",
+                "updateTime": "2024-07-08 06:37:30.000Z",
+                "patchGitUrl": "null",
+                "patchGitBranch": "null",
+                "flutterVersion": "null"
+            }
+        ]
+    },
+    "msg": "成功"
+}
+
+/// FairPushy.updateBundle(bundleId: widget.bundleid).then((code) {}
+///FairPushyWidget(
+///        bundleid: "156",
+
+///http://127.0.0.1:8080/app/patch?bundleId=156
+
+{
+    "code": 0,
+    "data":
+    {
+        "appId": "29",
+        "bundleId": 156,
+        "patchCdnUrl": "https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/777bc78bba5003608030099f4d8f675a_fair_patch.zip",
+        "status": "1",
+        "remark": "fairtest01",
+        "bundleName": "fairtest01",
+        "bundleVersion": "0.0.1",
+        "updateTime": "2024-07-08 05:45:20.000Z",
+        "patchGitUrl": "null",
+        "patchGitBranch": "null",
+        "flutterVersion": "null"
+    },
+    "msg": "成功"
+}
+
+
+
